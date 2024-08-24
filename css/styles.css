@@ -35,6 +35,15 @@ ul.navbar-nav {
     flex-flow: row wrap;
 }
 
+.company-link:hover {
+    color: #80dbd0;
+}
+
+.company-link{
+    text-decoration: none;
+    color: #394053;
+}
+
 #main-card {
     margin: 12rem auto 3rem;
     padding: 3rem;
