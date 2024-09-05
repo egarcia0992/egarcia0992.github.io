@@ -1,234 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body class="text-center" id="top">
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-body shadow" id="nav">
-    <div class="container-fluid">
-        <a href="https://www.linkedin.com/in/edwin-garcia-172aa3211/">
-            <i class="bi-linkedin bi-lg"></i>
-        </a>
-        <div class="justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#top"><i class="bi bi-house"></i> Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#education"><i class="bi bi-mortarboard"></i> Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills"><i class="bi bi-person-check"></i> Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience"><i class="bi bi-buildings"></i> Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects"><i class="bi bi-list-task"></i> Projects</a>
-                </li>
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+        />
+        <link rel="stylesheet" href="/css/styles.css" />
+    </head>
+    <body class="text-center" id="top">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body shadow" id="nav">
+            <div class="container-fluid">
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="linkedin-icon">
+                            <a
+                                href="https://www.linkedin.com/in/edwin-garcia-172aa3211"
+                                target="_blank"
+                            >
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+
+                        <li class="github-icon">
+                            <a
+                                href="https://github.com/egarcia0992"
+                                target="_blank"
+                            >
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#top"
+                                ><i class="bi bi-house"></i> Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education"
+                                ><i class="bi bi-mortarboard"></i> Education</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills"
+                                ><i class="bi bi-person-check"></i> Skills</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience"
+                                ><i class="bi bi-buildings"></i> Experience</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects"
+                                ><i class="bi bi-list-task"></i> Projects</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Info Card -->
+        <div class="card justify-content-center" id="main-card">
+            <div>
+                <h1 id="name"><strong>Edwin Garcia</strong></h1>
+                <h2 style="padding: 4rem">Software Developer</h2>
+            </div>
+            <a
+                href="resume/Edwin_Garcia_Resume.pdf"
+                class="btn btn-lg"
+                id="download"
+                target="_blank"
+            >
+                Download Resume
+                <i class="bi bi-file-earmark-arrow-down-fill"></i>
+            </a>
+        </div>
+
+        <div>
+            <i class="arrow bi-caret-down-square"></i>
+        </div>
+        <!-- Education -->
+        <div id="education">
+            <h1>Education</h1>
+            <br />
+            <div class="education-block shadow">
+                <h3>Aurora University</h3>
+                <span class="education-date">May 2020 - May 2024</span>
+                <h4>Bachelor of Science in Computer Science</h4>
+                <p>
+                    Through completing several comprehensive computer science
+                    courses, I have gained a robust set of skills and practical
+                    experience. These courses have provided me with
+                    opportunities to apply my knowledge on various projects,
+                    solidifying my understanding of key concepts. I am now
+                    proficient in managing websites, databases, computer
+                    systems, and a range of software applications, making me
+                    well-equipped to contribute effectively in diverse
+                    technological environments.
+                </p>
+            </div>
+            <div class="education-block shadow">
+                <h3>East Aurora High School</h3>
+                <span class="education-date">May 2016 - May 2020</span>
+                <h4>High School Diploma</h4>
+            </div>
+        </div>
+        <!-- Skills -->
+        <div id="skills">
+            <h1>Skills</h1>
+            <br />
+            <ul>
+                <li class="shadow">JavaScript</li>
+                <li class="shadow">HTML</li>
+                <li class="shadow">CSS</li>
+                <li class="shadow">Bootstrap</li>
+                <li class="shadow">React.js</li>
+                <li class="shadow">React Native</li>
+                <li class="shadow">Java</li>
+                <li class="shadow">Spring Boot</li>
+                <li class="shadow">Python</li>
+                <li class="shadow">C#</li>
+                <li class="shadow">C++</li>
+                <li class="shadow">Swift</li>
+                <li class="shadow">MySQL</li>
+                <li class="shadow">Firebase</li>
+                <li class="shadow">Linux</li>
+                <li class="shadow">Azure</li>
             </ul>
+            <br />
         </div>
-    </div>
-</nav>
-<!-- Info Card -->
-<div class="card justify-content-center" id="main-card">
-    <div>
-        <h1 id="name"><strong>Edwin Garcia</strong></h1>
-        <h2 style="padding:4rem;">Software Developer</h2>
-    </div>
-    <a href="resume/Edwin_Garcia_Resume.pdf" class="btn btn-lg" id="download">
-        Download Resume <i class="bi bi-file-earmark-arrow-down-fill"></i>
-    </a>
-</div>
-
-<div>
-    <i class="arrow bi-caret-down-square"></i>
-</div>
-<!-- Education -->
-<div id="education">
-    <h1>Education</h1>
-    <br>
-    <div class="education-block shadow">
-        <h3>Aurora University</h3>
-        <span class="education-date">May 2020 - May 2024</span>
-        <h4>Bachelor of Science in Computer Science</h4>
-        <p>
-            Through completing several comprehensive computer science courses, I have gained a robust set of
-            skills and practical experience. These courses have provided me with opportunities to apply my
-            knowledge on various projects, solidifying my understanding of key concepts. I am now proficient
-            in managing websites, databases, computer systems, and a range of software applications, making
-            me well-equipped to contribute effectively in diverse technological environments.
-        </p>
-    </div>
-    <div class="education-block shadow">
-        <h3>East Aurora High School</h3>
-        <span class="education-date">May 2016 - May 2020</span>
-        <h4>High School Diploma</h4>
-    </div>
-</div>
-<!-- Skills -->
-<div id="skills">
-    <h1>Skills</h1>
-    <br>
-    <ul>
-        <li class="shadow">JavaScript</li>
-        <li class="shadow">HTML</li>
-        <li class="shadow">CSS</li>
-        <li class="shadow">Bootstrap</li>
-        <li class="shadow">React.js</li>
-        <li class="shadow">React Native</li>
-        <li class="shadow">Java</li>
-        <li class="shadow">Spring Boot</li>
-        <li class="shadow">Python</li>
-        <li class="shadow">C#</li>
-        <li class="shadow">C++</li>
-        <li class="shadow">Swift</li>
-        <li class="shadow">MySQL</li>
-        <li class="shadow">Firebase</li>
-        <li class="shadow">Linux</li>
-        <li class="shadow">Azure</li>
-    </ul>
-    <br>
-</div>
-<!-- Experience -->
-<div id="experience">
-    <h1>Experience</h1>
-    <br>
-    <div class="education-block shadow">
-        <h3>Intern</h3>
-        <span class="education-date">July 2023 - Present</span>
-            <h4>
-                <a class="company-link" href="https://www.cmegroup.com" target="_blank">CME Group</a>
-            </h4>
-        <ul>
-            <li>
-                Conduct audits of server cabinets across four data halls, managing over 800 server cabinets to
-                ensure optimal utilization and organization.
-            </li>
-            <li>
-            Granted access and escorted visiting engineers to their requested server cabinets while ensuring a
-            seamless and secure process.
-            </li>
-            <li>
-            Shadow infrastructure engineers, while they troubleshoot and perform server maintenance such as
-            installations, part replacements, and cable reseating.
-            </li>
-        </ul>
-    </div>
-    <br>
-</div>
-<!-- Projects -->
-<div id="projects">
-    <h1>Projects</h1>
-    <br>
-    <div class="accordion shadow" id="accordionPanelsStayOpen">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseOne" aria-controls="panelsStayOpen-collapseOne">
-                    React Native App
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                <div class="accordion-body">
-                    <video class="project-vid" width="100%" height="360" autoplay loop muted controls>
-                        <source src="imgs/FringeApp.webm" type="video/webm">
-                    </video>
-                    Collaborated with a team of three peers to design and develop a comprehensive React Native
-                    application for Fringe, a business client. Leveraged Jira for meticulous project tracking
-                    and management. Implemented Firestore/Firebase for robust backend database solutions and
-                    secure user authentication, ensuring a seamless user experience and efficient data handling.
-                </div>
+        <!-- Experience -->
+        <div id="experience">
+            <h1>Experience</h1>
+            <br />
+            <div class="education-block shadow">
+                <h3>Intern</h3>
+                <span class="education-date">July 2023 - Present</span>
+                <h4>
+                    <a
+                        class="company-link"
+                        href="https://www.cmegroup.com"
+                        target="_blank"
+                        >CME Group</a
+                    >
+                </h4>
+                <ul>
+                    <li>
+                        Conduct audits of server cabinets across four data
+                        halls, managing over 800 server cabinets to ensure
+                        optimal utilization and organization.
+                    </li>
+                    <li>
+                        Granted access and escorted visiting engineers to their
+                        requested server cabinets while ensuring a seamless and
+                        secure process.
+                    </li>
+                    <li>
+                        Shadow infrastructure engineers, while they troubleshoot
+                        and perform server maintenance such as installations,
+                        part replacements, and cable reseating.
+                    </li>
+                </ul>
             </div>
+            <br />
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-controls="panelsStayOpen-collapseTwo">
-                    iOS Weather App
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
-                <div class="accordion-body">
-                    <video class="project-vid" width="100%" height="360" autoplay loop muted controls>
-                        <source src="imgs/NekoWeatherApp.webm" type="video/webm">
-                    </video>
-                    Developed an iOS mobile application using Swift and SwiftUI to provide users with up-to-date
-                    weather information. Integrated the OpenWeatherMap API to fetch real-time weather data,
-                    processing JSON responses to display current weather conditions, forecasts, and other
-                    relevant details. This project highlights my expertise in iOS development, API integration,
-                    and handling JSON data.
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-controls="panelsStayOpen-collapseThree">
-                    Bad USB
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
-                <div class="accordion-body">
-                    <video class="project-vid" width="100%" height="360" autoplay loop muted controls>
-                        <source src="imgs/BadUSBVid.webm" type="video/webm">
-                    </video>
-                    Configured a Raspberry Pi Pico as a Human Interface Device (HID) to emulate keyboard input when
-                    connected to a computer. Developed a Ducky Script program to automate keystrokes, seamlessly
-                    opening a browser and directing users to my portfolio website. This project showcases my
-                    proficiency in hardware programming and cybersecurity applications.
-
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseFour" aria-controls="panelsStayOpen-collapseFour">
-                    Inventory Manager Website
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show">
-                <div class="accordion-body">
-                    <div>
-                        <a href="https://app-240820233891-b4aad9dyfcdmgna3.centralus-01.azurewebsites.net"
-                           target="_blank">
-                            <img src="imgs/InventorySite.png" alt="Inventory site picture" width="100%"
-                                 style="border: 1px solid black;">
-                        </a>
+        <!-- Projects -->
+        <div id="projects">
+            <h1>Projects</h1>
+            <br />
+            <div class="accordion shadow" id="accordionPanelsStayOpen">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne"
+                            aria-controls="panelsStayOpen-collapseOne"
+                        >
+                            React Native App
+                        </button>
+                    </h2>
+                    <div
+                        id="panelsStayOpen-collapseOne"
+                        class="accordion-collapse collapse show"
+                    >
+                        <div class="accordion-body">
+                            <video
+                                class="project-vid"
+                                width="100%"
+                                height="360"
+                                autoplay
+                                loop
+                                muted
+                                controls
+                            >
+                                <source
+                                    src="imgs/FringeApp.webm"
+                                    type="video/webm"
+                                />
+                            </video>
+                            Collaborated with a team of three peers to design
+                            and develop a comprehensive React Native application
+                            for Fringe, a business client. Leveraged Jira for
+                            meticulous project tracking and management.
+                            Implemented Firestore/Firebase for robust backend
+                            database solutions and secure user authentication,
+                            ensuring a seamless user experience and efficient
+                            data handling.
+                        </div>
                     </div>
-                    I developed an inventory management system using React.js for the frontend and Java Spring Boot
-                    for the backend. This application allows users to efficiently manage inventory by adding,
-                    deleting, updating, and finding items, as well as managing customer information with similar
-                    CRUD (Create, Read, Update, Delete) functionalities. The frontend communicates with the backend
-                    through APIs, and the entire system is deployed on Azure. An SQL database on Azure stores all
-                    the data, ensuring reliable and scalable data management.
-                    <a href="https://app-240820233891-b4aad9dyfcdmgna3.centralus-01.azurewebsites.net" target="_blank">
-                        https://app-240820233891-b4aad9dyfcdmgna3.centralus-01.azurewebsites.net
-                    </a>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo"
+                            aria-controls="panelsStayOpen-collapseTwo"
+                        >
+                            iOS Weather App
+                        </button>
+                    </h2>
+                    <div
+                        id="panelsStayOpen-collapseTwo"
+                        class="accordion-collapse collapse show"
+                    >
+                        <div class="accordion-body">
+                            <video
+                                class="project-vid"
+                                width="100%"
+                                height="360"
+                                autoplay
+                                loop
+                                muted
+                                controls
+                            >
+                                <source
+                                    src="imgs/NekoWeatherApp.webm"
+                                    type="video/webm"
+                                />
+                            </video>
+                            Developed an iOS mobile application using Swift and
+                            SwiftUI to provide users with up-to-date weather
+                            information. Integrated the OpenWeatherMap API to
+                            fetch real-time weather data, processing JSON
+                            responses to display current weather conditions,
+                            forecasts, and other relevant details. This project
+                            highlights my expertise in iOS development, API
+                            integration, and handling JSON data.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2
+                        class="accordion-header"
+                        id="panelsStayOpen-headingThree"
+                    >
+                        <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree"
+                            aria-controls="panelsStayOpen-collapseThree"
+                        >
+                            Bad USB
+                        </button>
+                    </h2>
+                    <div
+                        id="panelsStayOpen-collapseThree"
+                        class="accordion-collapse collapse show"
+                    >
+                        <div class="accordion-body">
+                            <video
+                                class="project-vid"
+                                width="100%"
+                                height="360"
+                                autoplay
+                                loop
+                                muted
+                                controls
+                            >
+                                <source
+                                    src="imgs/BadUSBVid.webm"
+                                    type="video/webm"
+                                />
+                            </video>
+                            Configured a Raspberry Pi Pico as a Human Interface
+                            Device (HID) to emulate keyboard input when
+                            connected to a computer. Developed a Ducky Script
+                            program to automate keystrokes, seamlessly opening a
+                            browser and directing users to my portfolio website.
+                            This project showcases my proficiency in hardware
+                            programming and cybersecurity applications.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2
+                        class="accordion-header"
+                        id="panelsStayOpen-headingFour"
+                    >
+                        <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFour"
+                            aria-controls="panelsStayOpen-collapseFour"
+                        >
+                            Inventory Manager Website
+                        </button>
+                    </h2>
+                    <div
+                        id="panelsStayOpen-collapseFour"
+                        class="accordion-collapse collapse show"
+                    >
+                        <div class="accordion-body">
+                            <div>
+                                <a
+                                    href="https://app-240820233891-b4aad9dyfcdmgna3.centralus-01.azurewebsites.net"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="imgs/InventorySite.png"
+                                        alt="Inventory site picture"
+                                        width="100%"
+                                        style="border: 1px solid black"
+                                    />
+                                </a>
+                            </div>
+                            I developed an inventory management system using
+                            React.js for the frontend and Java Spring Boot for
+                            the backend. This application allows users to
+                            efficiently manage inventory by adding, deleting,
+                            updating, and finding items, as well as managing
+                            customer information with similar CRUD (Create,
+                            Read, Update, Delete) functionalities. The frontend
+                            communicates with the backend through APIs, and the
+                            entire system is deployed on Azure. An SQL database
+                            on Azure stores all the data, ensuring reliable and
+                            scalable data management.
+                            <a
+                                href="https://app-240820233891-b4aad9dyfcdmgna3.centralus-01.azurewebsites.net"
+                                target="_blank"
+                            >
+                                https://app-240820233891-b4aad9dyfcdmgna3.centralus-01.azurewebsites.net
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- Footer -->
-<footer>
-    <div id="footer">
-        <a href="https://www.linkedin.com/in/edwin-garcia-172aa3211/">
-            <i class="bi-linkedin bi-lg"></i>
-        </a>
-        <p>Copyright &copy; <span id="current-year">2023</span> Edwin Garcia</p>
-    </div>
-</footer>
-</body>
+        <!-- Footer -->
+        <footer>
+            <div id="footer">
+                <ul class="ul-footer">
+                    <li class="linkedin-icon ul-footer-item">
+                        <a
+                            href="https://www.linkedin.com/in/edwin-garcia-172aa3211"
+                            target="_blank"
+                        >
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+
+                    <li class="github-icon ul-footer-item">
+                        <a
+                            href="https://github.com/egarcia0992"
+                            target="_blank"
+                        >
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p>
+                    Copyright &copy; <span id="current-year">2023</span> Edwin
+                    Garcia
+                </p>
+            </div>
+        </footer>
+    </body>
 </html>

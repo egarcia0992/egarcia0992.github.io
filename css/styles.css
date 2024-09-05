@@ -8,8 +8,13 @@ body {
     color: #2a67bc;
 }
 
-.bi-linkedin:active {
-    color: #333333;
+.bi-github {
+    font-size: 3rem;
+    color: #000000;
+}
+
+.github-icon {
+    padding-left: 10px;
 }
 
 #nav {
@@ -203,6 +208,16 @@ ul.navbar-nav {
     border-radius: 5px;
     margin-bottom: 1rem;
     margin-right: 1rem;
+}
+
+
+.ul-footer {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ul-footer-item {
+    display:inline-block;
 }
 
 footer {
